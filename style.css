@@ -123,46 +123,57 @@
     vertical-align: middle;
     padding: 0 5px
 }
-.flexbox,.upskill_sec {
+
+.flexbox,
+.upskill_sec {
     display: flex;
     align-items: center;
     justify-content: center
 }
+
 .flexright {
     text-align: left;
     padding: 0 0
 }
+
 .img-fluid {
     max-width: 100%;
     height: auto;
 }
-.course_list_sec ul li img,.course_list_sec ul li p {
+
+.course_list_sec ul li img,
+.course_list_sec ul li p {
     display: inline-block;
     vertical-align: middle;
     padding: 0 4px;
 }
+
 .flexright .count_head {
     font-size: 20px;
     font-weight: 700;
     color: #ee2c3c
 }
+
 .flexright .count_desc {
     font-size: 18px;
     color: #5b5b5b;
     font-weight: 300;
     text-align: left
 }
+
 .flexleft {
     width: 34%;
     padding: 0 10px 0 0
 }
-.flexright{
-    padding-top:25px;
-  }
 
-  .flexright .count_desc{
-    height:50px;
-  }
+.flexright {
+    padding-top: 25px;
+}
+
+.flexright .count_desc {
+    height: 50px;
+}
+
 /* profile card */
 /* .profile-card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -222,7 +233,8 @@
     margin-top: 10px;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
     font-size: 24px;
     top: 50%;
     transform: translateY(-50%);
@@ -248,6 +260,7 @@
 .slick-carousel {
     position: relative;
 }
+
 /* companies */
 .slider {
     display: flex;
@@ -277,8 +290,13 @@
 }
 
 @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* Responsive */
@@ -287,71 +305,322 @@
         width: 100px;
     }
 }
+
 /* Our job ready */
 .course-box {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            position: relative;
-        }
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
 
-        .course-image {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
+.course-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-        .course-image img {
-            max-width: 150px;
-            height: auto;
-        }
+.course-image img {
+    max-width: 150px;
+    height: auto;
+}
 
-        .course-title {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-align: center;
-        }
+.course-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
-        .course-subtitle {
-            font-size: 0.9em;
-            color: #777;
-            margin-bottom: 20px;
-            
-        }
+.course-subtitle {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
 
-        .course-info {
-            font-size: 0.8em;
-            color: #ff4f4f;
-            margin-bottom: 20px;
-        }
+}
 
-        .course-duration {
-            display: flex;
-            align-items: center;
-            color: #777;
-            font-size: 0.8em;
-            justify-content: center;
-        }
+.course-info {
+    font-size: 0.8em;
+    color: #ff4f4f;
+    margin-bottom: 20px;
+}
 
-        .course-duration i {
-            margin-right: 5px;
-        }
+.course-duration {
+    display: flex;
+    align-items: center;
+    color: #777;
+    font-size: 0.8em;
+    justify-content: center;
+}
 
-        .learn-more {
-            display: inline-block;
-            padding: 10px 20px;
-            background-image: linear-gradient(to right, #ff4f4f, #ff00ff);
-            color: white;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 0.9em;
-        }
+.course-duration i {
+    margin-right: 5px;
+}
 
-        @media (max-width: 600px) {
-            .company-logos {
-                flex-direction: column;
-            }
-        }
+.learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #ff4f4f, #ff00ff);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+    /* Smooth transition for color change */
+}
+
+.learn-more:hover {
+    color: white;
+    /* Ensures text color is white on hover */
+    text-decoration: none;
+    /* Optional: Removes underline from the link on hover if any */
+}
+
+@media (max-width: 600px) {
+    .company-logos {
+        flex-direction: column;
+    }
+}
+
+/* Why choose upGrad Campus */
+.new_testimonial_section h4 {
+    color: #000;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}
+
+.homesectionfive {
+    padding: 50px 0 25px;
+}
+
+.flexright {
+    padding-top: 25px;
+}
+
+.flexright .count_desc {
+    height: 50px;
+}
+
+/* .br-mobile{
+  display:none !important;
+} */
+
+.backlogs_to_off {
+    padding: 30px 0;
+    background: #efefef;
+}
+
+.backlogs_to_off h2 {
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.backlogs_to_off h5 {
+    font-weight: 300;
+}
+
+.ifram-yt iframe {
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.backlogs-colone {
+    padding-right: 30px;
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+
+    .course_name_head {
+        height: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .backlogs_to_off h5 {
+        padding-bottom: 20px;
+    }
+
+    .backlogs-colone {
+        padding-right: 0px;
+    }
+
+    .course_name_head {
+        height: auto;
+    }
+
+    .google_rating_bg.sec_1,
+    .google_rating_bg.sec_4 {
+        height: 250px;
+    }
+
+    /* .br-mobile{
+  display:block !important;
+} */
+
+}
+
+.campus-list-sec {
+    padding: 40px 0 10px 0;
+}
+
+.campus-list-sec ul {
+    padding: 0;
+    margin: 0;
+    text-align: center
+}
+
+.campus-list-sec ul li {
+    list-style: none;
+    width: 14%;
+    padding: 20px 10px;
+    display: inline-block;
+    vertical-align: text-top
+}
+
+.campus-list-sec ul li img {
+    width: 75px
+}
+
+.campus-list-sec ul li p span {
+    display: block
+}
+
+.campus-list-sec ul li p {
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    padding: 10px 0 0 0
+}
+.trianglebtm {
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: 20px
+}
+
+.trianglebtm img {
+    width: 70px
+}
+
+.linebtm {
+    position: absolute;
+    bottom: 20px;
+    left: 10px
+}
+
+.linebtm img {
+    width: 80px
+}
+
+.linetop {
+    position: absolute;
+    top: 50px;
+    left: auto;
+    right: 5%
+}
+
+.linetop img {
+    width: 70px
+}
+
+.linetopone {
+    position: absolute;
+    top: 20px;
+    left: 30%
+}
+
+.linetopone img {
+    width: 30px
+}
+
+.ug_title_head {
+    font-size: 30px;
+    font-weight: 300;
+    color: #ee2c3c;
+    line-height: 40px
+}
+
+.intro span {
+    display: block
+}
+
+.bannner__add-text,
+.ug_title_head {
+    background: linear-gradient(to right, #ef5c76, #da407e, #bd2988, #981d92, #66209a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    text-shadow: none;
+}
+.align-center {
+    text-align: center;
+}
+/* placement */
+.homesectionsix {
+    background: #f5f5f5;
+    width: 100%;
+    padding: 60px 0;
+    position: relative
+}
+
+.placement_list ul {
+    padding: 0;
+    margin: 0;
+    text-align: left
+}
+
+.placement_list ul li {
+    list-style: none;
+    width: 32%;
+    padding: 15px 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    text-align: center
+}
+
+.placement_list ul li img,.placement_list ul li p {
+    display: block;
+    vertical-align: middle
+}
+
+.placement_list ul li p {
+    font-weight: 600;
+    font-size: 15px
+}
+
+.placement_list ul li img {
+    width: 55px;
+    padding: 10px 0;
+    margin: auto;
+    display: block
+}
+
+.placement_list {
+    padding: 40px 0 30px 0
+}
+
+.learn_btn {
+    background: transparent;
+    border: 2px solid #ee2c3c;
+    border-radius: 30px;
+    margin: 5px 0 10px 0;
+    text-align: center;
+    display: inline-block
+}
+
+.learn_btn a,.learn_btn a:hover {
+    color: #ee2c3c;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    padding: 10px 30px
+}
+
+.placement_sec {
+    padding: 40px 40px 0 0
+}
