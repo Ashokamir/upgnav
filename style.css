@@ -7,16 +7,118 @@
     font-size: 16px;
 }
 
-.topnav {
-    padding: 10px 0;
+/* topnav */
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-md-row {
+    flex-direction: row;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.pb-3 {
+    padding-bottom: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.link-body-emphasis {
+    color: #333;
+}
+
+.text-decoration-none {
+    text-decoration: none;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #D32F2F;
     height: 50px;
 }
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-md-0 {
+    margin-top: 0;
+}
+
+.ms-md-auto {
+    margin-left: auto;
+}
+
+.me-3 {
+    margin-right: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-md-0 {
+    margin-bottom: 0;
+}
+
+.py-2 {
+    padding: 0.5rem 0;
+}
+
+.address-text, .phone-number {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.fas {
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+/* Responsive Styling */
+@media (max-width: 767.98px) {
+    .d-inline-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .me-3 {
+        margin-right: 0;
+    }
+
+    .mb-2 {
+        margin-bottom: 1rem;
+    }
+
+    .align-items-md-center {
+        align-items: center;
+    }
+
+    .ms-md-auto {
+        margin-left: 0;
+    }
+
+    .mt-md-0 {
+        margin-top: 1rem;
+    }
+}
+
+/* formwhole box */
 
 .icon {
     color: #D32F2F;
@@ -51,24 +153,15 @@
 .form-container {
     background-color: white;
     padding: 30px;
-    border-radius: 8px;
+    border-radius: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.benefits-list {
-    list-style: none;
-    padding-left: 0;
-}
 
-.benefits-list li {
-    margin-bottom: 20px;
-}
 
-.benefits-list li::before {
-    content: '\2714';
-    color: white;
-    margin-right: 10px;
-}
+
+
+
 
 .explore-btn {
     border: 2px solid #D32F2F;
@@ -136,8 +229,8 @@
     padding: 0 0
 }
 
-.img-fluid {
-    max-width: 100%;
+.img-fluid1 {
+    max-width: 75%;
     height: auto;
 }
 
@@ -274,6 +367,7 @@
 .slide-track {
     display: flex;
     animation: scroll 50s linear infinite;
+    width: calc(150px * 15 * 2); /* Width to cover all slides and their duplicates */
 }
 
 .slide {
@@ -282,6 +376,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .slide img {
@@ -293,9 +388,8 @@
     0% {
         transform: translateX(0);
     }
-
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
@@ -306,14 +400,35 @@
     }
 }
 
-/* Our job ready */
+
+/* Our Job-ready Courses */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.course-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.course-container {
+    display: flex;
+    gap: 20px;
+}
+
 .course-box {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 280px;
+    flex-shrink: 0;
 }
 
 .course-image {
@@ -323,26 +438,18 @@
 }
 
 .course-image img {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
 }
 
 .course-title {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 10px;
-    text-align: center;
-}
-
-.course-subtitle {
-    font-size: 0.9em;
-    color: #777;
-    margin-bottom: 20px;
-
 }
 
 .course-info {
-    font-size: 0.8em;
+    font-size: 0.85em;
     color: #ff4f4f;
     margin-bottom: 20px;
 }
@@ -351,7 +458,7 @@
     display: flex;
     align-items: center;
     color: #777;
-    font-size: 0.8em;
+    font-size: 0.85em;
     justify-content: center;
 }
 
@@ -367,22 +474,51 @@
     border-radius: 20px;
     text-decoration: none;
     font-size: 0.9em;
-    transition: color 0.3s;
-    /* Smooth transition for color change */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .learn-more:hover {
+    background-color: #ff4f4f;
     color: white;
-    /* Ensures text color is white on hover */
-    text-decoration: none;
-    /* Optional: Removes underline from the link on hover if any */
 }
 
-@media (max-width: 600px) {
-    .company-logos {
+.slider-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 18px;
+    border-radius: 0%;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
+
+@media (max-width: 800px) {
+    .course-container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .course-box {
+        width: 90%;
+    }
+
+    .slider-button {
+        display: none;
     }
 }
+
 
 /* Why choose upGrad Campus */
 .new_testimonial_section h4 {
@@ -538,7 +674,7 @@
 
 .ug_title_head {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 500;
     color: #ee2c3c;
     line-height: 40px
 }
@@ -581,10 +717,7 @@
     text-align: center
 }
 
-.placement_list ul li img,.placement_list ul li p {
-    display: block;
-    vertical-align: middle
-}
+
 
 .placement_list ul li p {
     font-weight: 600;
@@ -624,3 +757,4 @@
 .placement_sec {
     padding: 40px 40px 0 0
 }
+
