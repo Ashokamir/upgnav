@@ -50,6 +50,8 @@
 
 .logo {
     height: 50px;
+    margin: 15%;
+    
 }
 
 .mt-2 {
@@ -267,54 +269,56 @@
     height: 50px;
 }
 
-/* profile card */
-/* .profile-card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    float: left;
+/* profile card peoples*/
+
+
+.container {
+    max-width: 1200px; /* Adjust based on your layout */
+    margin: auto;
 }
-
-.profile-card img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-
-.profile-card .salary {
-    background-color: #6A0DAD;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.slick-slide {
-    margin: 0 15px;
-}
-
-.slick-prev, .slick-next {
-    color: black;
-    font-size: 24px;
-} */
-
 
 .profile-card {
     box-shadow: 0 4px 8px rgb(0 0 0 / 35%);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    background-color: #fff;
+    background-color: #e7e7e7;
     float: left;
+    height: 320px; /* Adjusted height */
+    width: 220px;  /* Adjusted width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .profile-card img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px; /* Adjusted image size */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.complogo {
+    height: 48px !important;
+    width: 100px !important;
+    margin: 10px auto 0 !important;
+    background: transparent;
+    border: none;
+    border-radius: 0% !important;
+}
+
+.profile-card h5 {
+    font-size: 15px; /* Uniform font size */
+    margin: 10px 0; /* Space between image and heading */
+    line-height: 1.2; /* Consistent line height */
+    flex-grow: 1; /* Allow flexible growth */
+}
+
+.profile-card p {
+    font-size: 14px; /* Uniform font size */
+    margin: 5px 0; /* Space between paragraphs */
+    line-height: 1.2; /* Consistent line height */
+    flex-grow: 1; /* Allow flexible growth */
 }
 
 .profile-card .salary {
@@ -324,35 +328,50 @@
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
+    font-size: 14px; /* Uniform font size */
+    align-self: center; /* Center align the salary box */
+    height: 30px; /* Set a fixed height */
 }
 
 .slick-prev,
 .slick-next {
-    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
+    font-size: 18px;
+    border-radius: 0%;
 }
 
 .slick-prev {
-    left: -40px;
+    left: -50px; /* Adjust based on your layout */
 }
 
 .slick-next {
-    right: -40px;
+    right: -50px; /* Adjust based on your layout */
 }
 
 .slick-slide {
-    margin: 0 15px;
+    margin: 0 10px; /* Adjust margin for increased card width */
 }
 
 .slick-list {
-    margin: 0 60px;
+    margin: 0 50px; /* Adjusted container margin */
     overflow: hidden;
+    padding: 0 80px; /* Increased padding to make space for arrows */
 }
 
 .slick-carousel {
     position: relative;
 }
+
+
+
 
 /* companies */
 .slider {
@@ -621,7 +640,7 @@
 }
 
 .campus-list-sec ul li p span {
-    display: block
+    display: block;
 }
 
 .campus-list-sec ul li p {
@@ -638,7 +657,7 @@
 }
 
 .trianglebtm img {
-    width: 70px
+    width: 70px;
 }
 
 .linebtm {
