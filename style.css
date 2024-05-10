@@ -7,6 +7,7 @@
     font-size: 16px;
 }
 
+
 /* topnav */
 .d-flex {
     display: flex;
@@ -83,8 +84,9 @@
 }
 
 .address-text, .phone-number {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     color: #333;
+    font-weight: 500;
 }
 
 .fas {
