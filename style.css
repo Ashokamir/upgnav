@@ -165,26 +165,10 @@
 
 
 
-.explore-btn {
-    border: 2px solid #D32F2F;
-    color: #D32F2F;
-    font-weight: bold;
-}
 
-.consultants-btn {
-    background-color: #D32F2F;
-    color: white;
-    font-weight: bold;
-}
 
-.icon-text {
-    color: #D32F2F;
-    font-weight: bold;
-}
 
-.text-muted {
-    font-size: 14px;
-}
+/* 3rsrow */
 
 .maincontainer {
     width: 75%;
@@ -192,17 +176,17 @@
     display: block
 }
 
+
+
+
+
 .homesectiontwo {
     width: 100%;
     position: relative;
     padding: 70px 0 50px 0;
 }
 
-.fullcontainer {
-    width: 98%;
-    margin: auto;
-    display: block
-}
+
 
 .course_list_sec ul {
     padding: 0;
@@ -267,7 +251,9 @@
 
 .flexright .count_desc {
     height: 50px;
+    
 }
+
 
 /* profile card peoples*/
 
