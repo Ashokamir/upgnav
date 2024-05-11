@@ -178,6 +178,7 @@
     width: 75%;
     margin: auto;
     display: block;
+    padding: 50px 0 60px 0;
 }
 
 .homesectiontwo {
@@ -236,9 +237,9 @@
 }
 
 .flexright .count_desc {
-    font-size: 16px;
-    color: #5b5b5b;
-    font-weight: 300;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 500;
 }
 
 /* Responsive Design */
@@ -315,10 +316,11 @@
 }
 
 .profile-card p {
-    font-size: 14px;
+    font-size: 15px;
     margin: 5px 0;
     line-height: 1.2;
     flex-grow: 1;
+    color: #ff0036;
 }
 
 .profile-card .salary {
@@ -428,6 +430,10 @@
 
 
 /* companies */
+.ourcompaniesfull{
+    background-color: #f4f4f4;
+    padding: 50px 0 60px 0;
+}
 .slider {
     display: flex;
     overflow: hidden;
@@ -475,6 +481,12 @@
 
 
 /* Our Job-ready Courses */
+.maincontainerfive{
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+
 .slider-container {
     display: flex;
     align-items: center;
