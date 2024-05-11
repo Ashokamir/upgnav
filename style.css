@@ -84,7 +84,7 @@
 }
 
 .address-text, .phone-number {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #333;
     font-weight: 500;
 }
@@ -293,7 +293,7 @@
 }
 
 .profile-card img {
-    border-radius: 50%;
+    border-radius: 0%;
     width: 75px;
     height: 75px;
     margin: 0 auto;
