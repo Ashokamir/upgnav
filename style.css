@@ -123,7 +123,10 @@
 }
 
 /* formwhole box */
-
+.img-fluid2 {
+    max-width: 60%;
+    height: auto;
+}
 .icon {
     color: #D32F2F;
     margin-right: 8px;
@@ -170,17 +173,12 @@
 
 
 
-/* 3rsrow */
-
+/* 3rd Row Section */
 .maincontainer {
     width: 75%;
     margin: auto;
-    display: block
+    display: block;
 }
-
-
-
-
 
 .homesectiontwo {
     width: 100%;
@@ -188,92 +186,107 @@
     padding: 70px 0 50px 0;
 }
 
-
-
 .course_list_sec ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 
 .course_list_sec ul li {
-    width: 19%;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 5px
-}
-
-.flexbox,
-.upskill_sec {
+    width: 22%;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexleft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flexright {
-    text-align: left;
-    padding: 0 0
+    text-align: center;
+    padding-top: 10px;
 }
 
 .img-fluid1 {
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
-}
-
-.course_list_sec ul li img,
-.course_list_sec ul li p {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 4px;
 }
 
 .flexright .count_head {
     font-size: 20px;
     font-weight: 700;
-    color: #ee2c3c
+    color: #ee2c3c;
 }
 
 .flexright .count_desc {
-    font-size: 18px;
+    font-size: 16px;
     color: #5b5b5b;
     font-weight: 300;
-    text-align: left
 }
 
-.flexleft {
-    width: 34%;
-    padding: 0 10px 0 0
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .course_list_sec ul li {
+        width: 45%;
+    }
+
+    .flexright .count_head {
+        font-size: 18px;
+    }
+
+    .flexright .count_desc {
+        font-size: 14px;
+    }
 }
 
-.flexright {
-    padding-top: 25px;
+@media (max-width: 768px) {
+    .course_list_sec ul li {
+        width: 100%;
+    }
+
+    .flexright .count_head {
+        font-size: 16px;
+    }
+
+    .flexright .count_desc {
+        font-size: 14px;
+    }
 }
 
-.flexright .count_desc {
-    height: 50px;
-    
-}
 
 
-/* profile card peoples*/
-
-
+/* Profile Card Peoples */
 .container {
-    max-width: 1200px; /* Adjust based on your layout */
+    max-width: 1200px;
     margin: auto;
 }
 
 .profile-card {
-    box-shadow: 0 4px 8px rgb(0 0 0 / 35%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     background-color: #e7e7e7;
     float: left;
-    height: 320px; /* Adjusted height */
-    width: 220px;  /* Adjusted width */
+    height: 320px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -282,8 +295,8 @@
 .profile-card img {
     border-radius: 50%;
     width: 75px;
-    height: 75px; /* Adjusted image size */
-    margin: 0 auto; /* Center the image horizontally */
+    height: 75px;
+    margin: 0 auto;
 }
 
 .complogo {
@@ -292,21 +305,20 @@
     margin: 10px auto 0 !important;
     background: transparent;
     border: none;
-    border-radius: 0% !important;
 }
 
 .profile-card h5 {
-    font-size: 15px; /* Uniform font size */
-    margin: 10px 0; /* Space between image and heading */
-    line-height: 1.2; /* Consistent line height */
-    flex-grow: 1; /* Allow flexible growth */
+    font-size: 15px;
+    margin: 10px 0;
+    line-height: 1.2;
+    flex-grow: 1;
 }
 
 .profile-card p {
-    font-size: 14px; /* Uniform font size */
-    margin: 5px 0; /* Space between paragraphs */
-    line-height: 1.2; /* Consistent line height */
-    flex-grow: 1; /* Allow flexible growth */
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.2;
+    flex-grow: 1;
 }
 
 .profile-card .salary {
@@ -316,9 +328,9 @@
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
-    font-size: 14px; /* Uniform font size */
-    align-self: center; /* Center align the salary box */
-    height: 30px; /* Set a fixed height */
+    font-size: 14px;
+    align-self: center;
+    height: 30px;
 }
 
 .slick-prev,
@@ -337,25 +349,79 @@
 }
 
 .slick-prev {
-    left: -50px; /* Adjust based on your layout */
+    left: -50px;
 }
 
 .slick-next {
-    right: -50px; /* Adjust based on your layout */
+    right: -50px;
 }
 
 .slick-slide {
-    margin: 0 10px; /* Adjust margin for increased card width */
+    margin: 0 10px;
 }
 
 .slick-list {
-    margin: 0 50px; /* Adjusted container margin */
+    margin: 0 50px;
     overflow: hidden;
-    padding: 0 80px; /* Increased padding to make space for arrows */
+    padding: 0 80px;
 }
 
 .slick-carousel {
     position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .profile-card {
+        width: 180px;
+        height: auto;
+    }
+    .profile-card img {
+        width: 60px;
+        height: 60px;
+    }
+    .complogo {
+        width: 80px;
+        height: auto;
+    }
+    .profile-card .salary {
+        font-size: 12px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        width: 150px;
+        height: auto;
+    }
+    .profile-card img {
+        width: 50px;
+        height: 50px;
+    }
+    .complogo {
+        width: 70px;
+        height: auto;
+    }
+    .profile-card .salary {
+        font-size: 11px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .slick-prev,
+    .slick-next {
+        display: none;
+    }
+    .slick-list {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
